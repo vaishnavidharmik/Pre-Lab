@@ -1,74 +1,131 @@
 <!DOCTYPE html>
 
 <html>
-
 <head>
   
-<title>Survey Form</title>
+<title>Fashion Bling!!!</title>
   
 <style>
     
 body {
       
-font-family: font-family: Arial, Helvetica, sans-serif;
-}
-  
+font-family: Arial, sans-serif;
+      
+margin: 0;
+      
+padding: 0;
     
-form {
+}
+    
+    
+header {
+     
+ background-color: #333;
+     
+color: #fff;
       
-max-width: 500px;
+padding: 20px;
       
-margin: 0 auto;
+text-align: center;
+    
+}
+    
+    
+nav {
+      
+background-color: #f4f4f4;
+     
+padding: 10px;
+    
+}
+    
+    
+nav ul {
+      
+list-style-type: none;
+      
+margin: 0;
+      
+padding: 0;
+      
+overflow: hidden;
    
+ }
+    
+    
+nav ul li {
+      
+display: inline;
+      
+margin-right: 10px;
+    
 }
-  
     
-label {
+    
+nav ul li a {
       
-display: block;
+color: #333;
       
-margin-top: 10px;
-    
-}
-  
-    
-input[type="text"],
-    
-input[type="email"],
-   
- textarea {
-      
-width: 100%;
+text-decoration: none;
       
 padding: 5px;
+    }
+    
+    
+.container {
+      
+max-width: 960px;
+      
+margin: 20px auto;
+      
+padding: 20px;
+    
+}
+    
+    
+.product {
       
 border: 1px solid #ccc;
       
-border-radius: 4px;
+padding: 10px;
       
-box-sizing: border-box;
-      
-resize: vertical;
+margin-bottom: 20px;
     
 }
-  
     
-input[type="submit"] 
-{
-      
-background-color: blue;
+    
+.product img {
      
-color: white;
+width: 200px;
       
-padding: 10px 20px;
-      
-border: none;
-      
-border-radius: 4px;
-      
-cursor: pointer;
+height: 200px;
     
 }
+    
+    
+.product h3 {
+      
+margin: 10px 0;
+    
+}
+    
+    
+.product p {
+      
+margin: 5px 0;
+    }
+    
+    
+footer {
+      
+background-color: #333;
+      
+color: #fff;
+      
+padding: 20px;
+      
+text-align: center;
+    }
   
 </style>
 
@@ -76,47 +133,83 @@ cursor: pointer;
 
 <body>
   
-<form action="submit_survey.php" method="post">   
-<h1>Survey Form</h1>
+<header>
+    
+<h1>Fashion Bling!!!</h1>
+ 
+</header>
   
-    
-<label for="name">Name:</label>
-    
-<input type="text" id="name" name="name" required>
   
+<nav>
     
-<label for="email">Email:</label>
-    
-<input type="email" id="email" name="email" required>
-  
-    
-<label for="age">Age:</label>
-    
-<input type="number" id="age" name="age" required>
-  
-    
-<label for="gender">Gender:</label>
-    
-<select id="gender" name="gender" required>
+<ul>
+      <
+<li><a href="index.html">Home</a></li>
       
-<option value="">Please select</option>
+<li><a href="products.html">Products</a></li>
       
-<option value="male">Male</option>
+<li><a href="cart.html">Cart</a></li>
       
-<option value="female">Female</option>
+<li><a href="contact.html">Contact</a></li>
       
-<option value="other">Other</option>
+<li><a href="about.html">About Us</a></li>
     
-</select>
+</ul>
   
-    
-<label for="feedback">Feedback:</label>
-    
-<textarea id="feedback" name="feedback" rows="5" required></textarea>
+</nav>
   
+  
+<div class="container">
     
-<input type="submit" value="Submit"> 
-</form>
+<div class="product">
+      
+<img src="image2.jpg" alt="image2.jpg">
+      
+<h3>Lehenga</h3>
+      
+<p>8,00,000 Rs/-</p>
+      
+<p>Simple mehandi function lehenga at lest price . Speciality of lehenga is that it is designed by Manish Malhotra.</p>
+      
+<button>Add to Cart</button>
+    
+</div>
+    
+    
+<div class="product">
+      
+<img src="image3.jpg" alt="Product 2">
+      
+<h3>Simple jenes & top</h3>
+      
+<p>5000 Rs/-</p>
+      
+<p>Simple party wear top and jenes best for formal functions and formal meetings. </p>
+      
+<button>Add to Cart</button>
+    
+</div>
+   
+ <div class="product">
+      
+<img src="image4.jpg" alt="Product 2">
+      
+<h3>Simple Dangri </h3>
+      
+<p>10,000 Rs/-</p>
+      
+<p>Simple dangri for basic purpose </p>
+      
+<button>Add to Cart</button>
+    
+</div>
+   
+  
+<footer>
+    
+<p>2023 Fashion Bling!!!. All rights reserved.</p>
+  
+</footer>
 
 </body>
 
