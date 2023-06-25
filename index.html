@@ -1,38 +1,123 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-<title> HTML Notes </title>
+  
+<title>Survey Form</title>
+  
+<style>
+    
+body {
+      
+font-family: font-family: Arial, Helvetica, sans-serif;
+}
+  
+    
+form {
+      
+max-width: 500px;
+      
+margin: 0 auto;
+   
+}
+  
+    
+label {
+      
+display: block;
+      
+margin-top: 10px;
+    
+}
+  
+    
+input[type="text"],
+    
+input[type="email"],
+   
+ textarea {
+      
+width: 100%;
+      
+padding: 5px;
+      
+border: 1px solid #ccc;
+      
+border-radius: 4px;
+      
+box-sizing: border-box;
+      
+resize: vertical;
+    
+}
+  
+    
+input[type="submit"] 
+{
+      
+background-color: blue;
+     
+color: white;
+      
+padding: 10px 20px;
+      
+border: none;
+      
+border-radius: 4px;
+      
+cursor: pointer;
+    
+}
+  
+</style>
+
 </head>
+
 <body>
   
-<h1>HTML Notes</h1>
-<h2>Header Tags</h2>
- 
-<p> tag h1 is used for the main heading of the page.</p>
+<form action="submit_survey.php" method="post">   
+<h1>Survey Form</h1>
   
-<p> tag h2 is used for subheadings.</p>
+    
+<label for="name">Name:</label>
+    
+<input type="text" id="name" name="name" required>
   
-<p> tag h3 is used for inner contain. </p>
- 
-<p> tag h4 is used for inner contain.</p>
+    
+<label for="email">Email:</label>
+    
+<input type="email" id="email" name="email" required>
   
-<p> tag h5 is used for inner contain.</p>
+    
+<label for="age">Age:</label>
+    
+<input type="number" id="age" name="age" required>
   
-<p> tag h6 is used for inner contain.</p>
-   
-<h2>Text Styling</h2>
- 
-<p> <b> Bold </b> text can be achieved using the b tag.</p>
-<p><i>Italic</i> text can be achieved using the i tag.</p>
-<p><u>Underlined</u> text can be achieved using the u tag.</p>
-<h2>Setting Text Color</h2>
-<p>To set text color, you can use the CSS <code>color</code> property. For example:</p>
-<pre>
-h1{
-color:#333;
-}
-</pre>
-<p>This will set the color of all h1  tags to a dark gray (#333).</p>
+    
+<label for="gender">Gender:</label>
+    
+<select id="gender" name="gender" required>
+      
+<option value="">Please select</option>
+      
+<option value="male">Male</option>
+      
+<option value="female">Female</option>
+      
+<option value="other">Other</option>
+    
+</select>
+  
+    
+<label for="feedback">Feedback:</label>
+    
+<textarea id="feedback" name="feedback" rows="5" required></textarea>
+  
+    
+<input type="submit" value="Submit"> 
+</form>
+
 </body>
 
 </html>
